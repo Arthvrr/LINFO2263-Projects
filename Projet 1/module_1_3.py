@@ -4,9 +4,6 @@ from nltk.tokenize import WordPunctTokenizer
 from nltk.probability import FreqDist,ConditionalFreqDist
 from nltk.util import bigrams
 import math
-#from module_1_0 import df_corpus
-#from module_1_1 import vocab_set
-#from module_1_2 import df_test,V
 
 #IMPORT MODULE_1_0
 df_corpus = pd.read_csv("./Projet 1/train.csv")
@@ -72,7 +69,6 @@ df_test['Tokens'] = df_test['Text'].apply(lambda x: WordPunctTokenizer().tokeniz
 df_test['Tokens'] = df_test['Tokens'].apply(preprocess_tokens)
 
 vocab_set.add('<UNK>')
-
 
 
 #---1.3---

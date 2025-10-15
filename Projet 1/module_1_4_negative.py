@@ -4,9 +4,6 @@ from nltk.tokenize import WordPunctTokenizer
 from nltk.probability import FreqDist,ConditionalFreqDist
 from nltk.util import bigrams
 import math
-#from module_1_0 import df_corpus
-#from module_1_1 import vocab_set
-#from module_1_2 import df_test,V
 
 #IMPORT MODULE_1_0
 df_corpus = pd.read_csv("./Projet 1/train.csv")

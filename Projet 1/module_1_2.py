@@ -4,8 +4,6 @@ from nltk.tokenize import WordPunctTokenizer
 from nltk.probability import FreqDist,ConditionalFreqDist
 from nltk.util import bigrams
 import math
-#from module_1_0 import df_corpus,remove_html_tags,preprocess_tokens
-#from module_1_1 import all_tokens,vocab_set
 
 #IMPORT MODULE_1_0
 df_corpus = pd.read_csv("./Projet 1/train.csv")
@@ -59,7 +57,6 @@ vocab_set = set() #ensemble des mots
 
 for occ in ten_occ:
     vocab_set.add(occ[0]) #on ajoute tout les mots dont l'occurence >= 10 au set de vocabulaire
-
 
 
 #---1.2---

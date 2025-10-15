@@ -4,7 +4,6 @@ from nltk.tokenize import WordPunctTokenizer
 from nltk.probability import FreqDist,ConditionalFreqDist
 from nltk.util import bigrams
 import math
-#from module_1_0 import df_corpus
 
 #IMPORT MODULE_1_0
 df_corpus = pd.read_csv("./Projet 1/train.csv")
@@ -38,7 +37,6 @@ def preprocess_tokens(tokens):
     return result
 
 df_corpus['Tokens'] = df_corpus['Tokens'].apply(preprocess_tokens)
-
 
 
 #---1.1---

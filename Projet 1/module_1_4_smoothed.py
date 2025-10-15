@@ -4,13 +4,10 @@ from nltk.tokenize import WordPunctTokenizer
 from nltk.probability import FreqDist,ConditionalFreqDist
 from nltk.util import bigrams
 import math
-#from module_1_0 import df_corpus
-#from module_1_1 import vocab_set
-#from module_1_2 import df_test,V
 
 #IMPORT MODULE_1_0
-#df_corpus = pd.read_csv("./Projet 1/train.csv")
-df_corpus = pd.read_csv("/course/common/student/P1/train.csv")
+df_corpus = pd.read_csv("./Projet 1/train.csv")
+#df_corpus = pd.read_csv("/course/common/student/P1/train.csv")
 def remove_html_tags(text):
 
   import re
@@ -64,8 +61,8 @@ for occ in ten_occ:
 #IMPORT MODULE 1_2
 V = len(set(all_tokens)) #nombre total de mots uniques
 
-#df_test = pd.read_csv("./Projet 1/test.csv")
-df_test = pd.read_csv("/course/common/student/P1/test.csv")
+df_test = pd.read_csv("./Projet 1/test.csv")
+#df_test = pd.read_csv("/course/common/student/P1/test.csv")
 
 df_test['Text'] = df_test['Text'].apply(lambda x: remove_html_tags(x))
 df_test['Tokens'] = df_test['Text'].apply(lambda x: WordPunctTokenizer().tokenize(x))
